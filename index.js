@@ -11,6 +11,15 @@ app.use(express.json());
 
 // routes
 
+const usersRoutes = require("./routes/usersRoute");
+app.use("/users", usersRoutes)
+
+const postsRoutes = require("./routes/postsRoute");
+app.use("/posts", postsRoutes)
+
+const hubsRoutes = require("./routes/hubsRoutes");
+app.use("/hubs", hubsRoutes)
+
 
 app.listen(PORT, () => {
     console.log(`Express listening on ${PORT}`);

@@ -4,7 +4,9 @@ exports.up = function (knex) {
             table.increments("id").primary();
             table.string("first_name").notNullable();
             table.string("last_name").notNullable();
+            table.string("username").notNullable();
             table.string("email").notNullable();
+            table.string("image_url");
             table.text("description");
             table.string("time_zone");
             table.timestamp("updated_at").defaultTo(knex.fn.now());
@@ -23,7 +25,7 @@ exports.up = function (knex) {
             table.string("name");
             table.string("time_at");
             table.string("location_url");
-            table.string("favorite");
+            table.string("status").defaultTo("Favorite");
             table.timestamp("updated_at").defaultTo(knex.fn.now());
             table.timestamp("created_at").defaultTo(knex.fn.now());
         })
@@ -37,8 +39,10 @@ exports.up = function (knex) {
                 .inTable("users")
                 .onUpdate("CASCADE")
                 .onDelete("CASCADE");
-            table.string("favorite");
-            table.string("link_url");
+            table.string("name");
+            table.string("time_at");
+            table.string("location_url");
+            table.string("status").defaultTo("Favorite");
             table.timestamp("updated_at").defaultTo(knex.fn.now());
             table.timestamp("created_at").defaultTo(knex.fn.now());
         })
@@ -52,6 +56,7 @@ exports.up = function (knex) {
                 .inTable("users")
                 .onUpdate("CASCADE")
                 .onDelete("CASCADE");
+            table.string("name");
             table.string("link_url");
             table.timestamp("updated_at").defaultTo(knex.fn.now());
             table.timestamp("created_at").defaultTo(knex.fn.now());
@@ -68,7 +73,7 @@ exports.up = function (knex) {
                 .onDelete("CASCADE");
             table.string("name");
             table.string("image_url");
-            table.string("favorite");
+            table.string("status").defaultTo("Favorite");
             table.timestamp("updated_at").defaultTo(knex.fn.now());
             table.timestamp("created_at").defaultTo(knex.fn.now());
         })
@@ -91,9 +96,8 @@ exports.up = function (knex) {
                 .onUpdate("CASCADE")
                 .onDelete("CASCADE");
             table.string("post_link");
-            table.string("text");
-            table.string("image_url");
-            table.string("favorite");
+            table.text("message");
+            table.string("status").defaultTo("Favorite");
             table.timestamp("updated_at").defaultTo(knex.fn.now());
             table.timestamp("created_at").defaultTo(knex.fn.now());
         })
@@ -107,9 +111,20 @@ exports.up = function (knex) {
                 .inTable("posts")
                 .onUpdate("CASCADE")
                 .onDelete("CASCADE");
-            table.string("text");
-            table.string("favorite");
+            table.text("text");
+            table.string("status").defaultTo("Favorite");
             table.timestamp("updated_at").defaultTo(knex.fn.now());
             table.timestamp("created_at").defaultTo(knex.fn.now());
         });
+};
+
+exports.down = function (knex) {
+    return knex.schema
+        .dropTable("events")
+        .dropTable("meetings")
+        .dropTable("files")
+        .dropTable("comments")
+        .dropTable("posts")
+        .dropTable("hubs")
+        .dropTable("users");
 };
