@@ -1,27 +1,27 @@
 const knex = require("knex")(require("../knexfile"));
 
-const getHubs = (_req, res) => {
-    knex("hubs")
+const getMeetings = (_req, res) => {
+    knex("meetings")
         .then((data) => {
             res.json(data);
         })
         .catch((err) => {
-            res.status(400).send(`Error retrieving Hubs ${err}!`);
+            res.status(400).send(`Error retrieving Meetings ${err}!`);
         });
 };
 
-const getHubsId = (req, res) => {
-    knex("hubs")
+const getMeetingsId = (req, res) => {
+    knex("meetings")
     .where({ id: req.params.id })
         .then((data) => {
             res.json(data);
         })
         .catch((err) => {
-            res.status(400).send(`Error retrieving Hub ${req.params.id}, ${err}!`);
+            res.status(400).send(`Error retrieving Meeting ${req.params.id}, ${err}!`);
         });
 };
 
 module.exports = {
-    getHubs,
-    getHubsId
+    getMeetings,
+    getMeetingsId
 };

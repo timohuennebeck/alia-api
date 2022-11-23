@@ -111,7 +111,7 @@ exports.up = function (knex) {
                 .inTable("posts")
                 .onUpdate("CASCADE")
                 .onDelete("CASCADE");
-            table.text("text");
+            table.text("message");
             table.string("status").defaultTo("Favorite");
             table.timestamp("updated_at").defaultTo(knex.fn.now());
             table.timestamp("created_at").defaultTo(knex.fn.now());

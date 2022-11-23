@@ -7,7 +7,6 @@ router
     .route("/")
     .get(hubsController.getHubs)
 
-
 router
     .route("/:id")
     .get(hubsController.getHubsId)

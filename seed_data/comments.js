@@ -2,25 +2,25 @@ module.exports = [
     {
         id: 1,
         posts_id: 1,
-        text: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ",
-        status: "Favorited",
+        message: "Comment 1",
+        status: "Favorite",
     },
     {
         id: 2,
         posts_id: 1,
-        text: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ",
-        status: "Favorited",
+        message: "Comment 2",
+        status: "Favorite",
     },
     {
         id: 3,
         posts_id: 1,
-        text: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ",
-        status: "Favorited",
+        message: "Comment 3",
+        status: "Favorite",
     },
     {
         id: 4,
         posts_id: 1,
-        text: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ",
-        status: "Favorited",
+        message: "Comment 4",
+        status: "Favorite",
     },
 ];

@@ -20,6 +20,17 @@ app.use("/posts", postsRoutes)
 const hubsRoutes = require("./routes/hubsRoutes");
 app.use("/hubs", hubsRoutes)
 
+const filesRoutes = require("./routes/filesRoute")
+app.use("/files", filesRoutes)
+
+const meetingsRoutes = require("./routes/meetingsRoute")
+app.use("/meetings", meetingsRoutes)
+
+const eventsRoutes = require("./routes/eventsRoute")
+app.use("/events", eventsRoutes)
+
+const commentsRoutes = require("./routes/commentsRoute")
+app.use("/comments", commentsRoutes)
 
 app.listen(PORT, () => {
     console.log(`Express listening on ${PORT}`);
