@@ -95,7 +95,6 @@ exports.up = function (knex) {
                 .inTable("hubs")
                 .onUpdate("CASCADE")
                 .onDelete("CASCADE");
-            table.string("post_link");
             table.text("message");
             table.string("status").defaultTo("Favorite");
             table.timestamp("updated_at").defaultTo(knex.fn.now());

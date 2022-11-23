@@ -3,32 +3,64 @@ module.exports = [
         id: 1,
         users_id: 1,
         hubs_id: 2,
-        post_link: "https://googledrive.com",
-        message: "Post 1",
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         status: "Favorite",
     },
     {
         id: 2,
         users_id: 1,
         hubs_id: 3,
-        post_link: "https://googledrive.com",
-        message: "Post 2",
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         status: "Favorite",
     },
     {
         id: 3,
         users_id: 2,
         hubs_id: 2,
-        post_link: "https://googledrive.com",
-        message: "Post 3",
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         status: "Favorite",
     },
     {
         id: 4,
         users_id: 1,
+        hubs_id: 2,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 5,
+        users_id: 3,
+        hubs_id: 4,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 6,
+        users_id: 1,
+        hubs_id: 3,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 7,
+        users_id: 2,
         hubs_id: 1,
-        post_link: "https://googledrive.com",
-        message: "Post 4",
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 8,
+        users_id: 3,
+        hubs_id: 2,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         status: "Favorite",
     },
 ];
