@@ -11,5 +11,6 @@ router
 router
     .route("/:id")
     .get(postsController.getPostsId)
+    .put(postsController.updatePostsId)
 
 module.exports = router;

@@ -12,7 +12,7 @@ const getPosts = (_req, res) => {
 
 const getPostsId = (req, res) => {
     knex("posts")
-    .where({ id: req.params.id })
+        .where({ id: req.params.id })
         .then((data) => {
             res.json(data);
         })
@@ -21,7 +21,20 @@ const getPostsId = (req, res) => {
         });
 };
 
+const updatePostsId = (req, res) => {
+    knex("posts")
+        .where({ id: req.params.id })
+        .update({ ...body })
+        .then(() => {
+            res.sendStatus(200);
+        })
+        .catch((err) => {
+            res.status(400).send(`Error updating Post ${req.params.id}, ${err}!`);
+        });
+};
+
 module.exports = {
     getPosts,
-    getPostsId
+    getPostsId,
+    updatePostsId
 };

@@ -1,22 +1,22 @@
 module.exports = [
     {
         id: 1,
-        first_name: "Dua",
-        last_name: "Lipa",
-        username: "@dualipa",
-        email: "dua@lipa.com",
-        image_url: "https://i.imgur.com/VoqShKt.jpg",
+        first_name: "Timo",
+        last_name: "Huennebeck",
+        username: "@timohuennebeck",
+        email: "hello@timohuennebeck.com",
+        image_url: "https://i.imgur.com/2iIgpXm.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         time_zone: "CET",
     },
     {
         id: 2,
-        first_name: "Tom",
-        last_name: "Cruise",
-        username: "@tomcruise",
-        email: "tom@cruise.com",
-        image_url: "https://i.imgur.com/cY6YJB3.jpg",
+        first_name: "Will",
+        last_name: "Smith",
+        username: "@willsmith",
+        email: "willsmith@gmail.com",
+        image_url: "https://i.imgur.com/F5Cm8DQ.jpg",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         time_zone: "CET",

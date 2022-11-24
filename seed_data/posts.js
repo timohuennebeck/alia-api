@@ -5,7 +5,7 @@ module.exports = [
         hubs_id: 2,
         message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        status: "Favorite",
+        status: null,
     },
     {
         id: 2,
@@ -33,11 +33,11 @@ module.exports = [
     },
     {
         id: 5,
-        users_id: 3,
+        users_id: 1,
         hubs_id: 4,
         message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        status: "Favorite",
+        status: null,
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ module.exports = [
         hubs_id: 3,
         message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        status: "Favorite",
+        status: null,
     },
     {
         id: 7,
@@ -59,6 +59,62 @@ module.exports = [
         id: 8,
         users_id: 3,
         hubs_id: 2,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 9,
+        users_id: 3,
+        hubs_id: 4,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 10,
+        users_id: 3,
+        hubs_id: 4,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 11,
+        users_id: 2,
+        hubs_id: 4,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 12,
+        users_id: 2,
+        hubs_id: 4,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 13,
+        users_id: 3,
+        hubs_id: 5,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 14,
+        users_id: 3,
+        hubs_id: 5,
+        message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        status: "Favorite",
+    },
+    {
+        id: 15,
+        users_id: 1,
+        hubs_id: 5,
         message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         status: "Favorite",

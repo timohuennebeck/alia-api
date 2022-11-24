@@ -12,6 +12,20 @@ exports.up = function (knex) {
             table.timestamp("updated_at").defaultTo(knex.fn.now());
             table.timestamp("created_at").defaultTo(knex.fn.now());
         })
+        .createTable("friends", (table) => {
+            table.increments("id").primary();
+            table
+                .integer("users_id")
+                .unsigned()
+                .notNullable()
+                .references("id")
+                .inTable("users")
+                .onUpdate("CASCADE")
+                .onDelete("CASCADE");
+            table.string("name")
+            table.timestamp("updated_at").defaultTo(knex.fn.now());
+            table.timestamp("created_at").defaultTo(knex.fn.now());
+        })
         .createTable("events", (table) => {
             table.increments("id").primary();
             table
@@ -103,6 +117,14 @@ exports.up = function (knex) {
         .createTable("comments", (table) => {
             table.increments("id").primary();
             table
+                .integer("users_id")
+                .unsigned()
+                .notNullable()
+                .references("id")
+                .inTable("users")
+                .onUpdate("CASCADE")
+                .onDelete("CASCADE");
+            table
                 .integer("posts_id")
                 .unsigned()
                 .notNullable()
@@ -119,6 +141,7 @@ exports.up = function (knex) {
 
 exports.down = function (knex) {
     return knex.schema
+        .dropTable("friends")
         .dropTable("events")
         .dropTable("meetings")
         .dropTable("files")
