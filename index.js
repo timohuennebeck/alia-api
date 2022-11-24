@@ -18,8 +18,8 @@ app.get("/", (_req, res) => {
 const usersRoutes = require("./routes/usersRoute");
 app.use("/users", usersRoutes);
 
-const friendsRoute = require("./routes/friendsRoute");
-app.use("/friends", friendsRoute);
+const friendsRoutes = require("./routes/friendsRoute");
+app.use("/friends", friendsRoutes);
 
 const postsRoutes = require("./routes/postsRoute");
 app.use("/posts", postsRoutes);

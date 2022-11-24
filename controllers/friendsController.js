@@ -11,5 +11,5 @@ const getFriends = (_req, res) => {
 };
 
 module.exports = {
-    getFriends,
+    getFriends
 };

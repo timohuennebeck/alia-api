@@ -1,4 +1,5 @@
 const commentsData = require("../seed_data/comments");
+const friendsData = require("../seed_data/friends");
 const eventsData = require("../seed_data/events");
 const filesData = require("../seed_data/files");
 const hubsData = require("../seed_data/hubs");
@@ -11,6 +12,12 @@ exports.seed = function (knex) {
         .del()
         .then(function () {
             return knex("users").insert(usersData);
+        })
+        .then(() => {
+            return knex("friends").del();
+        })
+        .then(() => {
+            return knex("friends").insert(friendsData);
         })
         .then(() => {
             return knex("events").del();
